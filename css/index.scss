@@ -20,6 +20,11 @@ $font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu S
 	padding: 30px 70px 200px 70px;
 }
 
+.cactus-container {
+  flex-direction: column-reverse;
+}
+
+
 html {
 	background-color: black;
 	color: #e5dfc5;
