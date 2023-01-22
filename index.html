@@ -4,6 +4,9 @@
 <html>
 	<head>
   <link rel='stylesheet' href='/css/index.css'>
+  <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+  <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+
   </head>
   <body>
     <div class="container">
@@ -18,8 +21,16 @@
     </div>
     <p>
     <p>
-    <div class="container">
-    [comment section here]
+    <div lass="container" id="comment-section"></div>
+<script>
+initComments({
+  node: document.getElementById("comment-section"),
+  defaultHomeserverUrl: "https://matrix.cactus.chat:8448",
+  serverName: "cactus.chat",
+  siteName: "trashpalace.tv",
+  commentSectionId: "section1"
+})
+</script>
     </div>
     <p>
     <p>
