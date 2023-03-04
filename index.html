@@ -6,7 +6,22 @@
   <link rel="shortcut icon" type="image/png" href="favicon.png">
   <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
   <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
-
+  <script>
+    var countDownDate = new Date("Mar 21, 2023 20:00:00").getTime();
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+      + minutes + "m ";
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "EXPIRED";
+      }
+    }, 2000);
+    </script>
   <style>
     * {
       box-sizing: border-box;
@@ -115,7 +130,7 @@
       </iframe>
     </div>
     <div id="expire-note" class="container">
-      this content expires in <b>[countdown timings]</b> - next weeks programme starts at <b>tuesday 20:00</b>
+      this content expires in <b id="timer"></b > - next weeks programme starts at <b>tuesday 20:00</b>
     </div>
     <div class="container">
       <div id="comment-section">
