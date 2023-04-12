@@ -12,27 +12,27 @@
   <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
   <meta property="og:image" content="https://underscores.shop/wp-content/uploads/2022/01/trashpalace-banner.jpg" />
   <script>
-    window.onload = function() {
-    document.getElementById('content-this').src += '';
-    document.getElementById('content-next').src += '';
+    window.onload = function () {
+      document.getElementById('content-this').src += '';
+      document.getElementById('content-next').src += '';
     }
 
-    var countDownDate = new Date("Apr 11, 2023 20:00:00").getTime();
+    var countDownDate = new Date("Apr 18, 2023 20:00:00").getTime();
 
-    var x = setInterval(function() {
+    var x = setInterval(function () {
       var now = new Date().getTime();
       var distance = countDownDate - now;
       var days = Math.floor(distance / (1000 * 60 * 60 * 24));
       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-      + minutes + "m ";
+        + minutes + "m ";
       if (distance < 0) {
         document.getElementById("timer").innerHTML = (days + 7) + "days";
         document.getElementById('content-this').hidden = true
         document.getElementById('now-playing').hidden = true
         document.getElementById('next-playing-summary').innerHTML = "now playing"
-        
+
       }
       else {
         document.getElementById("timer").innerHTML = days + "d " + hours + "h "
@@ -40,7 +40,7 @@
         document.getElementById('tba').hidden = true
       }
     }, 500);
-    </script>
+  </script>
   <style>
     * {
       box-sizing: border-box;
@@ -141,21 +141,15 @@
     </div>
     <p>
     <div class="container">
-<iframe title="TRASHPALACE-THIS"
-        id="content-this"
-        src="https://ok.ru/videoembed/5350087592625"
-        allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315"
-        frameborder="0">
+      <iframe title="TRASHPALACE-THIS" id="content-this" src="https://ok.ru/videoembed/5416206142129" allowfullscreen=""
+        sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0">
       </iframe>
-      <iframe title="TRASHPALACE-NEXT"
-      id="content-next"
-      src="https://ok.ru/videoembed/5416206142129"
-      allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315"
-      frameborder="0">
-    </iframe>
+      <iframe title="TRASHPALACE-NEXT" id="content-next" src="https://ok.ru/videoembed/5462805973681" allowfullscreen=""
+        sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0">
+      </iframe>
     </div>
     <div id="expire-note" class="container">
-      this content expires in <b id="timer"></b > - next weeks programme starts at <b>tuesday 20:00</b>
+      this content expires in <b id="timer"></b> - next weeks programme starts at <b>tuesday 20:00</b>
     </div>
     <div class="container">
       <div id="comment-section">
@@ -175,29 +169,30 @@
         <details id="now-playing">
           <summary>now playing</summary>
           <div>
-            <h2><b>Sedmikrásky</b> aka <b>Daisies</b> (1966) <i>directed by Věra Chytilová</i></h2>
+            <h2><b>老人Z</b> aka <b>Roujin Z</b> (1991) <i>directed by Hiroyuki Kitakubo</i></h2>
             <p>
             <p>
-              Two teenage girls, both named Marie, decide that since the world is spoiled they will be spoiled as well; accordingly they embark on a series of destructive pranks in which they consume and destroy the world about them
+              A compassionate young nurse is determined to help an elderly invalid chosen by the Japanese Ministry of
+              Public Welfare to test the Z-001, a computerized hospital bed with robotic features that allegedly
+              displays more efficiency and skills than any human nurse
             <p>
             <p>
-              <img
-              src="https://underscores.shop/wp-content/uploads/2023/03/daisies_poster.png"
-              alt="film poster">
+              <img src="https://underscores.shop/wp-content/uploads/2023/04/Roujin_Z.jpg" alt="film poster">
           </div>
         </details>
         <details>
           <summary id="next-playing-summary">next up</summary>
           <div>
-            <h2><b>老人Z</b> aka <b>Roujin Z</b> (1991) <i>directed by Hiroyuki Kitakubo</i></h2>
+            <h2><b>Escape from Tomorrow</b> (2013) <i>directed by Randy Moore</i></h2>
             <p>
             <p>
-              A compassionate young nurse is determined to help an elderly invalid chosen by the Japanese Ministry of Public Welfare to test the Z-001, a computerized hospital bed with robotic features that allegedly displays more efficiency and skills than any human nurse
+              an unsatisfied middle aged man on vacation with his family at Disney World finds himself
+              inexplicably obsessed with two French teenage girls. The park environment soon turns to something more
+              sinister and Jim must protect his adventurous kids, placate his suspicious wife
+              and defend himself against the happiest place on Earth
             <p>
             <p>
-              <img
-              src="https://underscores.shop/wp-content/uploads/2023/04/Roujin_Z.jpg"
-              alt="film poster">
+              <img src="http://underscores.shop/wp-content/uploads/2023/04/escape-from-tomorrow-poster.jpg" alt="film poster">
           </div>
         </details>
         <details id="tba">
@@ -233,7 +228,8 @@
             <ul>
               <li>join the <a href="https://underscores.shop/trashpalace/" target=”_blank”>email newsletter</a> </li>
               <li>follow me on <a href="https://autonomous.zone/@cyberboy666" target=”_blank”>mastodon</a> </li>
-              <li>follow <b>trashpalace.tv</b> on <a href="https://www.instagram.com/trashpalace.tv" target=”_blank”>instagram</a> </li>
+              <li>follow <b>trashpalace.tv</b> on <a href="https://www.instagram.com/trashpalace.tv"
+                  target=”_blank”>instagram</a> </li>
             </ul>
           </div>
         </details>
@@ -242,7 +238,8 @@
           <div>
             currently the weekly physical screenings are happening in <b>karori, wellington, new zealand</b> - everyone
             is
-            welcome ! tuesday nights, doors from 19:30 screening starts 20:00 sharp - if you would like to attend pls email <b>tim (at)
+            welcome ! tuesday nights, doors from 19:30 screening starts 20:00 sharp - if you would like to attend pls
+            email <b>tim (at)
               cyberboy666 (dot) com</b> for address
           </div>
         </details>
