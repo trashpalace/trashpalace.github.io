@@ -6,7 +6,7 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <title>TRASHPALACE.TV</title>>
+  <title>TRASHPALACE.TV</title>
 
   <link rel="shortcut icon" type="image/png" href="favicon.ico">
   <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
@@ -18,7 +18,7 @@
       document.getElementById('content-next').src += '';
     }
 
-    var countDownDate = new Date("May 2, 2023 20:00:00").getTime();
+    var countDownDate = new Date("May 9, 2023 20:00:00").getTime();
 
     var x = setInterval(function () {
       var now = new Date().getTime();
@@ -31,6 +31,7 @@
       if (distance < 0) {
         document.getElementById("timer").innerHTML = (days + 7) + "days";
         document.getElementById('content-this').hidden = true
+        document.getElementById('warning-this').hidden = true
         document.getElementById('now-playing').hidden = true
         document.getElementById('next-playing-summary').innerHTML = "now playing"
 
@@ -38,6 +39,7 @@
       else {
         document.getElementById("timer").innerHTML = days + "d " + hours + "h "
         document.getElementById('content-next').hidden = true
+        document.getElementById('warning-next').hidden = true
         document.getElementById('tba').hidden = true
       }
     }, 500);
@@ -142,15 +144,19 @@
     </div>
     <p>
     <div class="container">
-      <iframe title="TRASHPALACE-THIS" id="content-this" src="https://ok.ru/videoembed/5519622343345" allowfullscreen=""
+      <iframe title="TRASHPALACE-THIS" id="content-this" src="https://ok.ru/videoembed/5177832508081" allowfullscreen=""
         sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0">
       </iframe>
-      <iframe title="TRASHPALACE-NEXT" id="content-next" src="https://ok.ru/videoembed/5177832508081" allowfullscreen=""
+      <iframe title="TRASHPALACE-NEXT" id="content-next" src="https://ok.ru/videoembed/5639142836913" allowfullscreen=""
         sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0">
       </iframe>
     </div>
+    <div id="warning-this"></div>
+    <div id="warning-next"><i><b>EXTREME CONTENT WARNING</b> this film shows a few graphic scenes of animal
+        slaughter</i></div>
+    <br>
     <div id="expire-note" class="container">
-      this content expires in <b id="timer"></b> - <i>no screening next week</i> - back again <b>tuesday may 9th 20:00</b>
+      this content expires in <b id="timer"></b> - next weeks programme starts at <b>tuesday 20:00</b>
     </div>
     <div class="container">
       <div id="comment-section">
@@ -170,20 +176,24 @@
       <div class="text-block">
         <details id="now-playing">
           <summary>now playing</summary>
-          <div>
-            <h2><b>Static</b> (1985) <i>directed by Mark Romanek</i></h2>
-            <p>
-            <p>
-              An eccentric and possibly brilliant young man, troubled by the death of his parents, claims to be readying a world-changing invention.
-            <p>
-            <p>
-              <img src="https://underscores.shop/wp-content/uploads/2023/04/static.jpg" alt="film poster">
-          </div>
+          <i>no screening this week</i> - back again <b>tuesday may 9th 20:00</b>
         </details>
         <details>
           <summary id="next-playing-summary">next up</summary>
           <div>
-            <i>no screening next week</i> - back again <b>tuesday may 9th 20:00</b> - film tba
+            <div>
+              <h2><b>Touki-Bouki</b> AKA <b>The Journey of the Hyena </b> (1973) <i>directed by Djibril Diop Mambéty</i>
+              </h2>
+              <br>
+              <i><b>EXTREME CONTENT WARNING</b> this film shows a few graphic scenes of animal slaughter</i>
+              <br>
+              <br>
+              A cowherd with a skull-mounted motorcycle and a university student meet in Dakar; put off by life in
+              Senegal, they plan to make money in Paris
+              <p>
+              <p>
+                <img src="https://underscores.shop/wp-content/uploads/2023/05/touki-bouki.jpg" alt="film poster">
+            </div>
           </div>
         </details>
         <details id="tba">
@@ -235,9 +245,19 @@
           </div>
         </details>
         <details>
+          <summary>content warnings</summary>
+          <div>
+            if i know a film we are showing has extreme content (esp scenes depicting sexual violence) there will be a
+            warning label on this site - however not all are viewed prior - i recomend checking for specific content warnings by
+            making an account and following them on the website <a href="https://https://www.doesthedogdie.com/"
+              target="_blank">doesthedogdie.com</a>
+          </div>
+        </details>
+        <details>
           <summary>about this site</summary>
           <div>
-            this static site was made with plain ol html & css (+ a splash of js) - see the (open)source code and more info about it <a href="https://github.com/trashpalace/trashpalace.github.io" target="_blank">here</a>
+            this static site was made with plain ol html & css (+ a splash of js) - see the (open)source code and more
+            info about it <a href="https://github.com/trashpalace/trashpalace.github.io" target="_blank">here</a>
           </div>
         </details>
       </div>
