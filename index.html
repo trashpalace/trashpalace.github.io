@@ -1,5 +1,12 @@
 <!doctype html>
 <html>
+<!-- things to do when updating to next weeks film:
+- update the countDownDate
+- update the content warning section
+- update the current and next video embed links
+- update the now and next info part (copy the next to the now and then add new to the next)
+
+-->
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +25,7 @@
       document.getElementById('content-next').src += '';
     }
 
-    var countDownDate = new Date("May 9, 2023 20:00:00").getTime();
+    var countDownDate = new Date("May 16, 2023 20:00:00").getTime();
 
     var x = setInterval(function () {
       var now = new Date().getTime();
@@ -144,16 +151,16 @@
     </div>
     <p>
     <div class="container">
-      <iframe title="TRASHPALACE-THIS" id="content-this" src="https://ok.ru/videoembed/5177832508081" allowfullscreen=""
+      <iframe title="TRASHPALACE-THIS" id="content-this" src="https://ok.ru/videoembed/5639142836913" allowfullscreen=""
         sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0">
       </iframe>
-      <iframe title="TRASHPALACE-NEXT" id="content-next" src="https://ok.ru/videoembed/5639142836913" allowfullscreen=""
+      <iframe title="TRASHPALACE-NEXT" id="content-next" src="https://ok.ru/videoembed/5729820674737" allowfullscreen=""
         sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0">
       </iframe>
     </div>
-    <div id="warning-this"></div>
-    <div id="warning-next"><i><b>EXTREME CONTENT WARNING</b> this film shows a few graphic scenes of animal
+    <div id="warning-this"><i><b>EXTREME CONTENT WARNING</b> this film shows a few graphic scenes of animal
         slaughter</i></div>
+    <div id="warning-next"></div>
     <br>
     <div id="expire-note" class="container">
       this content expires in <b id="timer"></b> - next weeks programme starts at <b>tuesday 20:00</b>
@@ -176,24 +183,32 @@
       <div class="text-block">
         <details id="now-playing">
           <summary>now playing</summary>
-          <i>no screening this week</i> - back again <b>tuesday may 9th 20:00</b>
+          <div>
+            <h2><b>Touki-Bouki</b> AKA <b>The Journey of the Hyena </b> (1973) <i>directed by Djibril Diop Mambéty</i>
+            </h2>
+            <br>
+            <i><b>EXTREME CONTENT WARNING</b> this film shows a few graphic scenes of animal slaughter</i>
+            <br>
+            <br>
+            A cowherd with a skull-mounted motorcycle and a university student meet in Dakar; put off by life in
+            Senegal, they plan to make money in Paris
+            <p>
+            <p>
+              <img src="https://underscores.shop/wp-content/uploads/2023/05/touki-bouki.jpg" alt="film poster">
+          </div>
         </details>
         <details>
           <summary id="next-playing-summary">next up</summary>
           <div>
-            <div>
-              <h2><b>Touki-Bouki</b> AKA <b>The Journey of the Hyena </b> (1973) <i>directed by Djibril Diop Mambéty</i>
-              </h2>
-              <br>
-              <i><b>EXTREME CONTENT WARNING</b> this film shows a few graphic scenes of animal slaughter</i>
-              <br>
-              <br>
-              A cowherd with a skull-mounted motorcycle and a university student meet in Dakar; put off by life in
-              Senegal, they plan to make money in Paris
-              <p>
-              <p>
-                <img src="https://underscores.shop/wp-content/uploads/2023/05/touki-bouki.jpg" alt="film poster">
-            </div>
+            <h2><b>D.E.B.S.</b> (2004) <i>Angela Robinson</i></h2>
+            <br>
+            Recruited by the U.S. government for their unique ability to lie, cheat and fight, Amy, Max, Janet and
+            Dominique join an underground academy of secret agents known only as D.E.B.S. Now the girls must
+            combine their skills for their most important mission- to capture vexing vixen Lucy Diamond, the deadliest
+            criminal the world has ever known.
+            <p>
+            <p>
+              <img src="https://underscores.shop/wp-content/uploads/2023/05/debs.jpg" alt="film poster">
           </div>
         </details>
         <details id="tba">
@@ -248,7 +263,8 @@
           <summary>content warnings</summary>
           <div>
             if i know a film we are showing has extreme content (esp scenes depicting sexual violence) there will be a
-            warning label on this site - however not all are viewed prior - i recomend checking for specific content warnings by
+            warning label on this site - however not all are viewed prior - i recomend checking for specific content
+            warnings by
             making an account and following them on the website <a href="https://https://www.doesthedogdie.com/"
               target="_blank">doesthedogdie.com</a>
           </div>
