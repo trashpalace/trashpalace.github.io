@@ -49,7 +49,18 @@
         document.getElementById('warning-next').hidden = true
         document.getElementById('tba').hidden = true
       }
-    }, 500);
+
+      // check for and remove duplicate comments
+      comments = document.getElementsByClassName("cactus-comment");
+      for (let i = 0; i < comments.length - 1; i++) {
+        if (comments[i].querySelector(".cactus-message-text").innerText == comments[i + 1].querySelector(".cactus-message-text").innerText) {
+          comments[i].remove()
+          i--;
+        }
+      }
+    }
+      , 500);
+
   </script>
   <style>
     * {
