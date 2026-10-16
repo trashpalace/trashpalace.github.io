@@ -52,15 +52,6 @@
         document.getElementById('warning-next').hidden = true
         document.getElementById('tba').hidden = true
       }
-
-      // check for and remove duplicate comments
-      comments = document.getElementsByClassName("cactus-comment");
-      for (let i = 0; i < comments.length - 1; i++) {
-        if (comments[i].querySelector(".cactus-message-text").innerText == comments[i + 1].querySelector(".cactus-message-text").innerText) {
-          comments[i].remove()
-          i--;
-        }
-      }
     }
       , 500);
 
@@ -160,9 +151,10 @@
         sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0">
       </iframe>   
       <div id="warning-this">
+        warning-this
     </div>
     <div id="warning-next"></div>
-      CONTENT WARNING: this film depicts some sexual violence
+      warning-next
     <br>
     <div id="expire-note" class="container">
     this content expires in <b id="timer"></b> - next screening <b>tuesday 19:30</b>
